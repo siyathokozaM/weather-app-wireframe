@@ -1,0 +1,56 @@
+.container {
+  max-width: 600px;
+  background: #add8e6;
+}
+.form {
+  text-align: center;
+}
+input {
+  background: #add8e6;
+  width: 250px;
+  height: 40px;
+  padding: 5px;
+  border: none;
+  border-bottom: 3px solid #000000;
+}
+.btn {
+  border: none;
+  padding: 5px 20px;
+  margin-left: 15px;
+  transition: 0.3s all ease-in-out;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background: #000;
+}
+
+table td {
+  border: 1px solid #808080;
+  text-align: left;
+}
+td {
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+tr {
+  background-color: #80bccf;
+}
+small {
+  display: block;
+}
+img {
+  max-width: 100px;
+}
+.days {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.days .col {
+  background: #80bccf;
+  margin: 5px;
+}
+.days img {
+  max-width: 40px;
+}

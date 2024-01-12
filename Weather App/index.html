@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container-fluid border bg-dark text-center">
+      <div class="container text-center mt-5 mb-5 p-3 border">
+        <div class="form">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search your city..."
+          />
+          <button class="btn search-btn" onclick="search()">Search</button>
+        </div>
+
+        <div class="row mt-5 text-center weather-atm">
+          <div class="col text-center">
+            <span><img src="images/cloudy.png" alt="cloudy" /></span>
+            <span id="temp"> 14°C°F</span>
+            <h6>Temperature</h6>
+          </div>
+
+          <div class="col text-center">
+            <table>
+              <tr class="tr">
+                <td>Precipitation</td>
+                <td>20%</td>
+              </tr>
+              <tr>
+                <td>Humidity</td>
+                <td id="humid">73%</td>
+              </tr>
+              <tr>
+                <td>Wind</td>
+                <td id="wind">31 km/h</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="col">
+            <h3 class="city">Cape Town</h3>
+            <small>Tuesday 22:00</small>
+            <small id="coverage">Mostly Cloudy</small>
+          </div>
+        </div>
+
+        <div class="row text-center mt-4 p-5 days">
+          <div class="col">
+            <p>Wed</p>
+            <img src="images/rain.png" alt="rainy" />
+            <p>16°12°</p>
+          </div>
+
+          <div class="col">
+            <p>Thur</p>
+            <img src="images/rain.png" alt="rainy" />
+            <p>16°12°</p>
+          </div>
+
+          <div class="col">
+            <p>Fri</p>
+            <img src="images/rain.png" alt="rainy" />
+            <p>16°13°</p>
+          </div>
+
+          <div class="col">
+            <p>Sat</p>
+            <img src="images/rain.png" alt="rainy" />
+            <p>15°11°</p>
+          </div>
+
+          <div class="col">
+            <p>Sun</p>
+            <img src="images/very-cloudy.png" alt="cloudy" />
+            <p>14°12°</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
